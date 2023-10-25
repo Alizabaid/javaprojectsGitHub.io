@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let names=[]
+            console.log(names)
+         
+            function sort(){
+                names.sort()
+                 console.log(names)
+            }
+            function rev(){
+                names.reverse()
+                 console.log(names)
+            }
+        
+            function push(){
+                
+                names.push(prompt("enter"))
+                 console.log(names)
+            }
+            function pop(){
+                names.pop()
+                 console.log(names)
+            }
+           
+           
+    </script>
+    <button onclick="sort()">sort</button>
+    <button onclick="rev()">rev</button>
+    <button onclick="push()">push</button>
+    <button onclick="pop()">pop</button>
+</body>
+</html>

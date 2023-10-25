@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            background-color: red;
+            padding: 10px;
+            border: 5px solid red;
+            border-radius: 15px;
+            font-size: large;
+            color: white;
+            
+
+        }
+        
+    </style>
+</head>
+<body>
+    <center>
+   <button onclick="regester()">regester</button>
+   <button onclick="login()">login</button>
+</center>
+    <script>
+
+let users=[]
+
+  function regester(){
+      users.push({
+        name :prompt("enter name"),
+        email : prompt("enter email"),
+        pwd : prompt("enter pwd")
+      })
+      console.log(users)
+  } 
+  function login(){
+    let pwd=prompt("enter correct pwd")
+    
+    for (let i=0; i<users.length; i++){
+        if(pwd == users [i] .pwd){
+            console.log("login successfully")
+        }
+
+    }
+  }
+    
+
+
+  
+
+
+
+
+   
+  
+    </script>
+</body>
+</html>
